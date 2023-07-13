@@ -1,14 +1,13 @@
-package com.example.cardapio;
+package br.com.teste.springbootteste;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-
 @SpringBootApplication
-public class CardapioApplication {
+public class SpringBootTesteApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(CardapioApplication.class, args);
+		SpringApplication.run(SpringBootTesteApplication.class, args);
 	}
 
 }

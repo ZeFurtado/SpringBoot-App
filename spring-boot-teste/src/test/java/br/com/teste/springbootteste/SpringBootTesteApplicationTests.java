@@ -1,10 +1,10 @@
-package com.example.cardapio;
+package br.com.teste.springbootteste;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class CardapioApplicationTests {
+class SpringBootTesteApplicationTests {
 
 	@Test
 	void contextLoads() {
