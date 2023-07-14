@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link th:href="@{/loginStyle.css}" rel="stylesheet" />
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<form class="form" id="formulario" action="controllerForm" method="post">
+    <h1 class="titulo">Cadastro</h1>
+
+    <label class="nome">Primeiro Nome* </label><br>
+    <input class="nomeInput" id="nomeInput" type="text" placeholder="Digite seu nome"><br>
+
+    <label>Sobrenome* </label><br>
+    <input class="sobrenomeInput" type="text" id="sobrenomeInput" placeholder="Digite seu sobrenome"><br>
+
+    <label>CPF*</label><br>
+    <input class="cpfInput" type="text" placeholder="Digite o seu CPF"><br>
+
+    <label>Sexo* </label><br>
+    <select class="sexoInput">
+        <option>Homem</option>
+        <option>Mulher</option>
+        <option>Outro...</option></select><br>
+    <label>Nome Social (opcional)</label><br>
+    <input class="nomesocialInput" type="text" placeholder="Digite seu nome social"><br>
+
+    <label>Data de nascimento*</label><br>
+    <input class="dataNascInput" type="Date"><br>
+
+    <input class="btnEnviar" type="submit" id="Cadastrar" name="botaoCadastro">
+
+</form>
+</body>
+</html>
