@@ -9,21 +9,14 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 public class HomeController {
 
-    @GetMapping("/saudacao/{nome}")
-    public String saudacao(@PathVariable String nome, ModelMap model) {
-        model.addAttribute("nome", nome);
-
-        return "saudacao";
-    }
-
-    @GetMapping("/lespaul")
-    public String lespaul(){
-        return "lespaul";
+    @GetMapping("/home")
+    public String home(){
+        return "home.html";
     }
 
     @GetMapping("/cadastro")
     public String cadastro(){
-        return "cadastro";
+        return "cadastro.html";
     }
 
 }

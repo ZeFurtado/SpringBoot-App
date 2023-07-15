@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link th:href="@{/loginStyle.css}" rel="stylesheet" />
+    <link th:href="@{/css/loginStyle.css}" rel="stylesheet" />
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
 <body>
 
-<form class="form" id="formulario" action="controllerForm" method="post">
+<form class="form" id="formulario" action="verificaFormulario" method="post">
     <h1 class="titulo">Cadastro</h1>
 
     <label class="nome">Primeiro Nome* </label><br>
@@ -30,7 +30,7 @@
     <label>Data de nascimento*</label><br>
     <input class="dataNascInput" type="Date"><br>
 
-    <input class="btnEnviar" type="submit" id="Cadastrar" name="botaoCadastro">
+    <input class="btnEnviar" type="submit" id="Cadastrar" name="botaoCadastro" value="Cadastrar">
 
 </form>
 </body>
