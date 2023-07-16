@@ -1,16 +1,25 @@
-body
-{
-    background: radial-gradient(circle, #f5f3f3, #ffffff);
+*{
+    margin: 0;
     overflow: hidden;
+}
+
+body{
+    background: radial-gradient(circle, #f5f3f3, #ffffff);
+}
+
+.homeWallpaper{
+    position: fixed;
+    width: 100%;
+    height: auto;
 }
 
 .form
 {
+    position: absolute;
     margin-left: 38%;
-    margin-bottom: 35%;
+    margin-bottom: 30%;
     padding-left: 13px;
     font-family: 'Nunito', sans-serif;
-    font-family: 'Roboto', sans-serif;
     width: 350px;
     height: 525px;
     align-items: center;
@@ -21,7 +30,7 @@ body
 
 .titulo
 {
-    padding-left: 100px;
+    padding-left: 95px;
     padding-top: 10px;
     margin-bottom: 15px;
 }
