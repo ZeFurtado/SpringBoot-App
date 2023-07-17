@@ -3,47 +3,47 @@
     overflow: hidden;
 }
 
-body{
-    background: radial-gradient(circle, #f5f3f3, #ffffff);
-}
-
 .homeWallpaper{
-    position: fixed;
+    position: absolute;
     width: 100%;
     height: auto;
 }
 
 .form
 {
-    position: absolute;
+    position: fixed;
     margin-left: 38%;
-    margin-bottom: 30%;
+    margin-bottom: 100%;
     padding-left: 13px;
     font-family: 'Nunito', sans-serif;
-    width: 350px;
+    width: 375px;
     height: 525px;
     align-items: center;
-    background-color: rgb(253, 253, 253);
-    border-radius: 15px;
+    background-color:black;
+    opacity: 0.8;
+    border-radius: 10px;
     box-shadow: 1px 1px 5px 1px rgba(114, 112, 112, 0.4);
 }
 
 .titulo
 {
     padding-left: 95px;
-    padding-top: 10px;
+    padding-top: 15px;
     margin-bottom: 15px;
+    color: white;
 }
 
 .nomeInput
 {
+    color:black;
     width: 93%;
     height: 30px;
     border-style: solid;
     border-width: 1px;
-    background-color: #ffffff;
+    background-color: grey;
     border-radius: 3px;
     margin-bottom: 10px;
+    font-size: large;
 }
 
 .nomeInput:hover
@@ -55,13 +55,15 @@ body{
 
 .sobrenomeInput
 {
+    color:black;
     width: 93%;
     height: 30px;
     border-style: solid;
     border-width: 1px;
-    background-color: #ffffff;
+    background-color: grey;
     border-radius: 3px;
     margin-bottom: 10px;
+    font-size: large;
 }
 
 .sobrenomeInput:hover
@@ -73,13 +75,16 @@ body{
 
 .cpfInput
 {
+    color:black;
     width: 93%;
     height: 30px;
     border-style: solid;
-    background-color: #ffffff;
+    border-width: 1px;
+    background-color: grey;
     border-radius: 3px;
     margin-bottom: 10px;
-    border-width: 1px;
+    font-size: large;
+    opacity: 1;
 }
 
 .cpfInput:hover
@@ -95,17 +100,21 @@ body{
     border-radius: 3px;
     height: 35px;
     margin-bottom: 10px;
+    background-color: grey;
+    font-size: large;
 }
 
 .nomesocialInput
 {
+    color:black;
     width: 93%;
     height: 30px;
     border-style: solid;
     border-width: 1px;
-    background-color: #ffffff;
+    background-color: grey;
     border-radius: 3px;
     margin-bottom: 10px;
+    font-size: large;
 }
 
 .nomesocialInput:hover
@@ -121,9 +130,9 @@ body{
     height: 32px;
     border-style: solid;
     border-width: 1px;
-    background-color: #ffffff;
     border-radius: 3px;
     margin-bottom: 10px;
+    background-color: grey;
 }
 
 .dataNascInput:hover
