@@ -4,7 +4,6 @@ import br.com.teste.springbootteste.acessomysql.User;
 import br.com.teste.springbootteste.acessomysql.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.*;
 
 @Controller
@@ -29,11 +28,11 @@ public class HomeController {
         return "cadastro.html";
     }
 
-    @GetMapping  ("/envio")
-    public @ResponseBody String addNewUser(@RequestParam String nome, @RequestParam String email){
+    @PostMapping  ("/envio")
+    public String addNewUser(){
         User n = new User();
-        n.setName(nome);
-        n.setEmail(email);
+        n.setNome("Volnir");
+        n.setEmail("gmail.com");
         userRepository.save(n);
 
         return "cadastro.html";

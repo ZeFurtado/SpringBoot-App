@@ -1,34 +1,20 @@
 package br.com.teste.springbootteste.acessomysql;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 @Entity
+@Table(name = "users")
 public class User {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    private Integer id;
-
-    private String name;
+    private String nome;
     private String email;
 
-    public Integer getId()
-    {
-        return id;
+    public String getNome() {
+        return nome;
     }
 
-    public void setId(Integer id){
-        this.id = id;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
+    public void setNome(String name) {
+        this.nome = name;
     }
 
     public String getEmail() {
