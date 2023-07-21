@@ -48,8 +48,9 @@
     margin-top: 38%;
     margin-left: 53%;
     transition: 0.5s;
+    cursor: pointer;
 }
 
 .btnCadastro:hover{
-    opacity: 0.8;
+    opacity: 0.9;
 }

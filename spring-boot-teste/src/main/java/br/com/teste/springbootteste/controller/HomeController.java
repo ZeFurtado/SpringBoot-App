@@ -12,11 +12,6 @@ public class HomeController {
     @Autowired
     private UserRepository userRepository;
 
-    @GetMapping("/teste")
-    public String teste(){
-        return "teste.html";
-    }
-
 
     @GetMapping("/home")
     public String home(){
@@ -29,13 +24,18 @@ public class HomeController {
     }
 
     @PostMapping  ("/envio")
-    public String addNewUser(){
+    public String addNewUser(@RequestParam("nome") String nome, @RequestParam("email") String email){
         User n = new User();
-        n.setNome("Volnir");
-        n.setEmail("gmail.com");
+        n.setNome(nome);
+        n.setEmail(email);
         userRepository.save(n);
 
-        return "cadastro.html";
+        return "home.html";
+    }
+
+    @GetMapping("/cadastroConcluido")
+    public String error(){
+        return "home.html";
     }
 
 

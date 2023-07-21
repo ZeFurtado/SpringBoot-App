@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link th:href="@{/css/loginStyle.css}" rel="stylesheet" />
+    <link th:href="@{/css/registerStyle.css}" rel="stylesheet" />
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
@@ -9,23 +9,24 @@
 
 <img class="homeWallpaper" src="/images/homeWallpaper.jpg"/>
 
-<form class="form" id="formulario" action="verificaFormulario" method="post">
+<form class="form" id="formulario" action="envio" method="post">
     <h1 class="titulo">Cadastro</h1>
 
     <label class="nome">Primeiro Nome* </label><br>
-    <input class="nomeInput" id="nomeInput" type="text" placeholder="Digite seu nome"><br>
+    <input class="nomeInput" id="nomeInput" type="text" placeholder="Digite seu nome" name="nome"><br>
 
-    <label>Sobrenome* </label><br>
-    <input class="sobrenomeInput" type="text" id="sobrenomeInput" placeholder="Digite seu sobrenome"><br>
+    <label>Email* </label><br>
+    <input class="sobrenomeInput" type="text" id="sobrenomeInput" placeholder="Digite seu sobrenome" name="email"><br>
 
     <label>CPF*</label><br>
     <input class="cpfInput" type="text" placeholder="Digite o seu CPF"><br>
 
-    <label>Sexo* </label><br>
+    <label class="sexoInputLabel">Sexo*</label><br>
     <select class="sexoInput">
+        <option>...</option>
         <option>Homem</option>
         <option>Mulher</option>
-        <option>Outro...</option></select><br>
+        <option>Outra coisa...</option></select><br>
     <label>Nome Social (opcional)</label><br>
     <input class="nomesocialInput" type="text" placeholder="Digite seu nome social"><br>
 

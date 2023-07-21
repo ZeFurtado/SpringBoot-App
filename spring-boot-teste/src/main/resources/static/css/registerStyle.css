@@ -4,14 +4,14 @@
 }
 
 .homeWallpaper{
-    position: absolute;
+    position: fixed;
     width: 100%;
     height: auto;
 }
 
 .form
 {
-    position: fixed;
+    position: absolute;
     margin-left: 38%;
     margin-bottom: 100%;
     padding-left: 13px;
@@ -20,14 +20,13 @@
     height: 525px;
     align-items: center;
     background-color:black;
-    opacity: 0.8;
     border-radius: 10px;
     box-shadow: 1px 1px 5px 1px rgba(114, 112, 112, 0.4);
 }
 
 .titulo
 {
-    padding-left: 95px;
+    padding-left: 30%;
     padding-top: 15px;
     margin-bottom: 15px;
     color: white;
@@ -40,7 +39,7 @@
     height: 30px;
     border-style: solid;
     border-width: 1px;
-    background-color: grey;
+    background-color: white;
     border-radius: 3px;
     margin-bottom: 10px;
     font-size: large;
@@ -55,12 +54,11 @@
 
 .sobrenomeInput
 {
-    color:black;
     width: 93%;
     height: 30px;
     border-style: solid;
     border-width: 1px;
-    background-color: grey;
+    background-color: white;
     border-radius: 3px;
     margin-bottom: 10px;
     font-size: large;
@@ -80,7 +78,7 @@
     height: 30px;
     border-style: solid;
     border-width: 1px;
-    background-color: grey;
+    background-color: white;
     border-radius: 3px;
     margin-bottom: 10px;
     font-size: large;
@@ -94,13 +92,17 @@
     background-color: #d1cccc;
 }
 
+.sexoInputLabel{
+    color: white;
+}
+
 .sexoInput
 {
     width: 95%;
     border-radius: 3px;
     height: 35px;
     margin-bottom: 10px;
-    background-color: grey;
+    background-color: white;
     font-size: large;
 }
 
@@ -111,7 +113,7 @@
     height: 30px;
     border-style: solid;
     border-width: 1px;
-    background-color: grey;
+    background-color: white;
     border-radius: 3px;
     margin-bottom: 10px;
     font-size: large;
@@ -132,7 +134,7 @@
     border-width: 1px;
     border-radius: 3px;
     margin-bottom: 10px;
-    background-color: grey;
+    background-color: white;
 }
 
 .dataNascInput:hover
@@ -146,12 +148,12 @@
 {
     font-size: 25px;
     color: rgb(250, 245, 245);
-    height: 50px;
+    height: 58px;
     width: 96%;
     border-radius: 5px;
     border-style: solid;
     border-width: 1px;
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(100, 100, 100);
     cursor: pointer;
     margin-top: 5px;
 }

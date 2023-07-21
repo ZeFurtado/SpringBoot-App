@@ -9,6 +9,14 @@ public class User {
     private String nome;
     private String email;
 
+    private String cpf;
+
+    private char sexo;
+
+    private String nomeSocial;
+
+    private String dataDeNasc;
+
     public String getNome() {
         return nome;
     }
@@ -23,5 +31,45 @@ public class User {
 
     public void setEmail(String email) {
         this.email = email;
+    }
+
+    public String getCpf(){
+        return cpf;
+    }
+
+    public void setCpf(String cpf){
+        this.cpf = cpf;
+    }
+
+    public char getSexo() {
+        return sexo;
+    }
+
+    public void setSexo(char sexo) {
+        this.sexo = sexo;
+    }
+
+    public String getNomeSocial() {
+        return nomeSocial;
+    }
+
+    public void setNomeSocial(String nomeSocial) {
+        this.nomeSocial = nomeSocial;
+    }
+
+    public String getDataDeNasc() {
+        return dataDeNasc;
+    }
+
+    public void setDataDeNasc(String dataDeNasc) {
+        this.dataDeNasc = dataDeNasc;
+    }
+
+    public String toString(){
+        StringBuilder stringBuilder = new StringBuilder();
+        stringBuilder.append("Nome: " + this.nome + "\n");
+        stringBuilder.append("Email: " + this.email + "\n");
+
+        return stringBuilder.toString();
     }
 }
