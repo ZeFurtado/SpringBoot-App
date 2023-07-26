@@ -1,6 +1,11 @@
 package br.com.teste.springbootteste.acessomysql;
 
+import net.bytebuddy.dynamic.loading.InjectionClassLoader;
+import org.hibernate.annotations.GeneratorType;
+import org.springframework.boot.autoconfigure.web.WebProperties;
+import org.springframework.lang.NonNull;
 import javax.persistence.*;
+
 
 @Entity
 @Table(name = "users")
@@ -65,11 +70,15 @@ public class User {
         this.dataDeNasc = dataDeNasc;
     }
 
-    public String toString(){
-        StringBuilder stringBuilder = new StringBuilder();
-        stringBuilder.append("Nome: " + this.nome + "\n");
-        stringBuilder.append("Email: " + this.email + "\n");
-
-        return stringBuilder.toString();
+    @Override
+    public String toString() {
+        return "User{" +
+                "nome='" + nome + '\'' +
+                ", email='" + email + '\'' +
+                ", cpf='" + cpf + '\'' +
+                ", sexo=" + sexo +
+                ", nomeSocial='" + nomeSocial + '\'' +
+                ", dataDeNasc='" + dataDeNasc + '\'' +
+                '}';
     }
 }

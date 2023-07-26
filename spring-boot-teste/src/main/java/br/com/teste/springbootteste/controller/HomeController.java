@@ -28,11 +28,15 @@ public class HomeController {
     public String addNewUser(@RequestParam("nome") String nome, @RequestParam("email") String email){
         ValidaDados validaDados = new ValidaDados();
         User tableUsers = new User();
+
         if(validaDados.nomeValido(nome)){
             tableUsers.setNome(nome);
         }else {
             return "erro.html";
         }
+
+
+
         tableUsers.setEmail(email);
         userRepository.save(tableUsers);
 
