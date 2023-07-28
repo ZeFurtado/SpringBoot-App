@@ -1,6 +1,5 @@
 *{
     margin: 0;
-    overflow: hidden;
 }
 
 .homeWallpaper{
@@ -13,7 +12,7 @@
 {
     position: absolute;
     margin-left: 38%;
-    margin-bottom: 100%;
+    margin-top: 5%;
     padding-left: 13px;
     font-family: 'Nunito', sans-serif;
     width: 375px;
@@ -163,4 +162,16 @@
     font-size: 23px;
     transition: 1s;
     background-color: #474747;
+}
+
+.error{
+    position: absolute;
+    width: 30%;
+    height: 15%;
+    margin-top: 35%;
+    margin-left: 33%;
+    background-color: red;
+    opacity: 0.8;
+    font-family: "Roboto Light";
+    font-size: small;
 }

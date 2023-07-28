@@ -5,6 +5,7 @@ import br.com.teste.springbootteste.acessomysql.UserRepository;
 import br.com.teste.springbootteste.acessomysql.ValidaDados;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
 @Controller
@@ -25,22 +26,22 @@ public class HomeController {
     }
 
     @PostMapping  ("/envio")
-    public String addNewUser(@RequestParam("nome") String nome, @RequestParam("email") String email){
+    public String addNewUser(@RequestParam("nome") String nome, @RequestParam("email") String email, Model model){
         ValidaDados validaDados = new ValidaDados();
         User tableUsers = new User();
 
-        if(validaDados.nomeValido(nome)){
+        if(validaDados.nomeInvalido(nome)){
+            model.addAttribute("nomeInvalido", "Nome inválido");
+            return "cadastro.html";
+        }else{
             tableUsers.setNome(nome);
-        }else {
-            return "erro.html";
+            tableUsers.setEmail(email);
+            userRepository.save(tableUsers);
+            return "home.html";
         }
 
 
 
-        tableUsers.setEmail(email);
-        userRepository.save(tableUsers);
-
-        return "home.html";
     }
 
     @GetMapping("/cadastroConcluido")
