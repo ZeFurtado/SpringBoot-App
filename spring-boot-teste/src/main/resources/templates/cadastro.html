@@ -8,38 +8,33 @@
 <body>
 <img class="homeWallpaper" src="/images/homeWallpaper.jpg"/>
 
-<form class="error">
-</form>
-
-
 <form class="form" id="formulario" action="envio" method="post">
     <h1 class="titulo">Cadastro</h1>
 
-    <label class="nome">Nome Completo* </label><br>
 
+    <label class="nomeLabel">Nome Completo* </label>
+    <label class="error" th:if="${nomeInvalido}">Nome Inválido</label><br>
     <input class="nomeInput" id="nomeInput" type="text" placeholder="Digite seu nome" name="nome"><br>
 
-    <label>Email* </label><br>
-    <input class="sobrenomeInput" type="text" id="sobrenomeInput" placeholder="Digite seu E-mail" name="email"><br>
+    <label class="emailLabel">Email* </label><br>
+    <input class="emailInput" type="text" id="emailInput" placeholder="Digite seu E-mail" name="email"><br>
 
-    <label>CPF*</label><br>
+    <label class="cpfLabel">CPF*</label><br>
     <input class="cpfInput" type="text" placeholder="Digite o seu CPF"><br>
 
-    <label class="sexoInputLabel">Sexo*</label><br>
+    <label class="sexoLabel">Sexo*</label><br>
     <select class="sexoInput">
         <option>...</option>
         <option>Homem</option>
         <option>Mulher</option>
         <option>Outra coisa...</option></select><br>
-    <label>Nome Social (opcional)</label><br>
+    <label class="nomeSocialLabel">Nome Social (opcional)</label><br>
     <input class="nomesocialInput" type="text" placeholder="Digite seu nome social"><br>
 
-    <label>Data de nascimento*</label><br>
+    <label class="dataNascLabel">Data de nascimento*</label><br>
     <input class="dataNascInput" type="Date"><br>
 
     <input class="btnEnviar" type="submit" id="Cadastrar" name="botaoCadastro" value="Cadastrar">
-
 </form>
-
 </body>
 </html>

@@ -31,6 +31,10 @@
     color: white;
 }
 
+.nomeLabel{
+    color:white;
+}
+
 .nomeInput
 {
     color:black;
@@ -51,7 +55,11 @@
     background-color: #e6dfdf;
 }
 
-.sobrenomeInput
+.emailLabel{
+    color: white;
+}
+
+.emailInput
 {
     width: 93%;
     height: 30px;
@@ -68,6 +76,10 @@
     transition: 1s;
     border-color: #dbdbdf;
     background-color: #e6dfdf;
+}
+
+.cpfLabel{
+    color:white;
 }
 
 .cpfInput
@@ -91,7 +103,7 @@
     background-color: #d1cccc;
 }
 
-.sexoInputLabel{
+.sexoLabel{
     color: white;
 }
 
@@ -118,12 +130,22 @@
     font-size: large;
 }
 
+.nomeSocialLabel{
+    color: white;
+}
+
+
 .nomesocialInput:hover
 {
     transition: 1s;
     border-color: #778899;
     background-color: #ffffff;
 }
+
+.dataNascLabel{
+    color: white;
+}
+
 
 .dataNascInput
 {
@@ -165,13 +187,7 @@
 }
 
 .error{
-    position: absolute;
-    width: 30%;
-    height: 15%;
-    margin-top: 35%;
-    margin-left: 33%;
-    background-color: red;
-    opacity: 0.8;
     font-family: "Roboto Light";
-    font-size: small;
+    font-size: medium;
+    color: red;
 }
