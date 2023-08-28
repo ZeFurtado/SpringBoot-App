@@ -14,6 +14,10 @@ public class HomeController {
     @Autowired
     private UserRepository userRepository;
 
+    @GetMapping("/error")
+    public @ResponseBody String error(){
+        return "errouuuu";
+    }
 
     @GetMapping("/home")
     public String home(){
@@ -40,14 +44,13 @@ public class HomeController {
             return "home.html";
         }
 
-
-
     }
 
     @GetMapping("/cadastroConcluido")
-    public String error(){
+    public String cadastroConcluido(){
         return "home.html";
     }
+
 
 
 }

@@ -18,14 +18,14 @@
     width: 375px;
     height: 525px;
     align-items: center;
-    background-color:black;
+    background-color:lightslategrey;
     border-radius: 5px;
     box-shadow: 1px 1px 5px 1px rgba(114, 112, 112, 0.4);
 }
 
 .titulo
 {
-    padding-left: 30%;
+    padding-left:27%;
     padding-top: 15px;
     margin-bottom: 15px;
     color: white;
